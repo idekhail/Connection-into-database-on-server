@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF_SqlServer.MySqlPage">
+    <ScrollView Margin="20">
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto">
+            <StackLayout Orientation="Vertical" Grid.Row="0">
+                <Label Text="Using SQl Server With Xamarin Forms" HorizontalOptions="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Grid.Row="1">
+                <Entry  Placeholder="Enter the Id" x:Name="UserId"/>
+                <Entry  Placeholder="Enter the Title" x:Name="UserTitle"/>
+                <Entry  Placeholder="Enter the Body" x:Name="UserBody"/>
+            </StackLayout>
+            <Grid Grid.Row="2" RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="*,*">
+                <Button Grid.Row="0" Grid.Column="0" Text="Get Info"    x:Name="GetInfo"
+                        Clicked="GetInfo_Clicked" Background="#256456" TextColor="White"/>
+                <Button Grid.Row="0" Grid.Column="1" Text="Insert Info" x:Name="InsertInfo"
+                        Clicked="InsertInfo_Clicked" Background="#256456" TextColor="White"/>
+                <Button Grid.Row="1" Grid.Column="0" Text="Update Info" x:Name="UpdateInfo"
+                        Clicked="UpdateInfo_Clicked"  Background="#256456" TextColor="White"/>
+                <Button Grid.Row="1" Grid.Column="1" Text="Delete Info" x:Name="DeleteInfo"
+                        Clicked="DeleteInfo_Clicked"  Background="#256456" TextColor="White"/>
+                <Button Grid.Row="2" Text="Test Connection" Clicked="TestConnection_Clicked" 
+                    Background="#9e2545" TextColor="White"/>
+                <Button Grid.Row="2" Grid.Column="1" Text="Clear" x:Name="Clear"
+                        Clicked="Clear_Clicked"  Background="#200456" TextColor="White"/>
+            </Grid>
+            <ListView Grid.Row="3" x:Name="MyListView" HasUnevenRows="True" Footer="" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid ColumnDefinitions="Auto,Auto,Auto" >
+                                <Label Text="{Binding Id}" TextColor="Black" Margin="10" />
+                                <Label Grid.Column="1" Text="{Binding Title}" TextColor="Black" Margin="10" />
+                                <Label Grid.Column="2" Text="{Binding Body}" TextColor="Black" Margin="10" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </ScrollView>
+</ContentPage>
