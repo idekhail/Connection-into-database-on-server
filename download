@@ -1,5 +1,0 @@
-# Connection-into-database-on-server
-
-you need to open NuGet packages  then download
-mysql.data     version      8.0.28
-system.data.sqlclient      version     4.8.3

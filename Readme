@@ -1,0 +1,12 @@
+# Connection-into-database-on-server
+
+you need to open NuGet packages  then download
+
+//=================================
+mysql.data     version      8.0.28
+open mysql then create database (mydb) and Create table (mytable)
+you need to get (server name , username, password, port, database name) to use it inside project
+//=================================
+system.data.sqlclient      version     4.8.3
+open sql server then create database (mydb) and Create table (mytable)
+you need to get (server name , username, password, database name) to use it inside project
