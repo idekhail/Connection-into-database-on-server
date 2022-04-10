@@ -13,9 +13,9 @@ namespace XF_SqlServer
             InitializeComponent();
             // Local Server
            //string serverdbname = "mydb";
-            //string servername = "192.168.0.104";
+            //string servername = "122.0.0.1";
             //string serverusername = "student";
-            //string serverpassword = "Ss@123";
+            //string serverpassword = "student";
             // Online Server
             string serverdbname = "db_a6410c_mydb";
             string servername = "SQL5104.site4now.net";
