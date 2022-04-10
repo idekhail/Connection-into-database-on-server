@@ -12,15 +12,15 @@ namespace XF_SqlServer
         {
             InitializeComponent();
             // Local Server
-            string serverdbname = "mydb";
-            string servername = "192.168.0.104";
-            string serverusername = "student";
-            string serverpassword = "Ss@123";
+           //string serverdbname = "mydb";
+            //string servername = "192.168.0.104";
+            //string serverusername = "student";
+            //string serverpassword = "Ss@123";
             // Online Server
-            //string serverdbname = "db_a6410c_mydb";
-            //string servername = "SQL5104.site4now.net";
-            //string serverusername = "db_a6410c_mydb_admin";
-            //string serverpassword = "Ss@123456";
+            string serverdbname = "db_a6410c_mydb";
+            string servername = "SQL5104.site4now.net";
+            string serverusername = "db_a6410c_mydb_admin";
+            string serverpassword = "Ss@123456";
 
             string sqlConn = $"Data Source={servername};Initial Catalog={serverdbname};User Id={serverusername};Password={serverpassword}";
 
