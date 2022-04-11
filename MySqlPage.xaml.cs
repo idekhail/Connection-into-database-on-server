@@ -15,14 +15,14 @@ namespace XF_SqlServer
             InitializeComponent();
             // Local Server
             string serverdbname = "mydb";
-            string servername = "122.0.0.1";
+            string servername = "127.0.0.1";
             string serverusername = "student";
             string serverpassword = "student";
             string serverport = "3306";          
 
              string sqlConn = $"Server={servername};Port={serverport};database={serverdbname};User Id={serverusername};Password={serverpassword};charset=utf8";
-            string sqlConn = "Server=MYSQL5025.site4now.net;Database=db_a6410c_student;Uid=a6410c_student;Pwd=Ss@123456";
-//
+           // string sqlConn = "Server=MYSQL5025.site4now.net;Database=db_a6410c_student;Uid=a6410c_student;Pwd=Ss@123456";
+
             connection = new MySqlConnection(sqlConn);
         }
         private async void TestConnection_Clicked(object sender, System.EventArgs e)
