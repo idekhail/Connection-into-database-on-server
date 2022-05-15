@@ -17,10 +17,10 @@ namespace XF_SqlServer
             //string serverusername = "student";
             //string serverpassword = "student";
             // Online Server
-            string serverdbname = "db_a6410c_mydb";
-            string servername = "SQL5104.site4now.net";
-            string serverusername = "db_a6410c_mydb_admin";
-            string serverpassword = "Ss@123456";
+            string serverdbname = "*****";
+            string servername = "*****";
+            string serverusername = "*****";
+            string serverpassword = "*****";
 
             string sqlConn = $"Data Source={servername};Initial Catalog={serverdbname};User Id={serverusername};Password={serverpassword}";
 
