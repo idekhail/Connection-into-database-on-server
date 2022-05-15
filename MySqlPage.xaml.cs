@@ -21,7 +21,7 @@ namespace XF_SqlServer
             string serverport = "3306";          
 
              string sqlConn = $"Server={servername};Port={serverport};database={serverdbname};User Id={serverusername};Password={serverpassword};charset=utf8";
-           // string sqlConn = "Server=MYSQL5025.site4now.net;Database=db_a6410c_student;Uid=a6410c_student;Pwd=Ss@123456";
+           // string sqlConn = "Server=****;Database=****;Uid=****;Pwd=****";
 
             connection = new MySqlConnection(sqlConn);
         }
